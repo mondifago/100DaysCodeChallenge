@@ -45,6 +45,19 @@
 
             Console.WriteLine($"Average Grade for all students is {studentAve}");
 
+            // Sort the list by Grade in descending order
+            students.Sort((s1, s2) => s2.Grade.CompareTo(s1.Grade));
+
+            Console.WriteLine("Students sorted by grade (highest to lowest):");
+            foreach (var student in students)
+            {
+                Console.WriteLine($"{student.Name}: {student.Grade}");
+            }
+
+            // If you need the highest grade student, it's now the first in the list
+            var highestGradeStudent = students[0];
+            Console.WriteLine($"\nStudent with highest grade: {highestGradeStudent.Name}, Grade: {highestGradeStudent.Grade}");
+
         }
     }
 }
