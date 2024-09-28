@@ -1,4 +1,6 @@
-﻿namespace _100DaysCodeChallenge
+﻿using _100DaysCodeChallenge.Day_2;
+
+namespace _100DaysCodeChallenge
 {
     internal class Program
     {
@@ -58,6 +60,21 @@
             var highestGradeStudent = students[0];
             Console.WriteLine($"\nStudent with highest grade: {highestGradeStudent.Name}, Grade: {highestGradeStudent.Grade}");
 
+            Applicant a1 = new Applicant { Name = "john", Age = 50, MonthlyIncome = 5000, YearsEmployed = 5 };
+            Applicant a2 = new Applicant { Name = "sarah", Age = 35, MonthlyIncome = 1000, YearsEmployed = 6 };
+            Applicant a3 = new Applicant { Name = "joe", Age = 15, MonthlyIncome = 4000, YearsEmployed = 4 };
+            Applicant a4 = new Applicant { Name = "Ada", Age = 35, MonthlyIncome = 10000, YearsEmployed = 3 };
+            Applicant a5 = new Applicant { Name = "paul", Age = 20, MonthlyIncome = 3000, YearsEmployed = 2 };
+            Applicant a6 = new Applicant { Name = "obi", Age = 15, MonthlyIncome = 2000, YearsEmployed = 7 };
+
+            LoanEligibilityChecker checker = new LoanEligibilityChecker();
+
+            Console.WriteLine($"{a1.Name} is eligible: {checker.IsEligibleForLoan(a1)}");
+            Console.WriteLine($"{a2.Name} is eligible: {checker.IsEligibleForLoan(a2)}");
+            Console.WriteLine($"{a3.Name} is eligible: {checker.IsEligibleForLoan(a3)}");
+            Console.WriteLine($"{a4.Name} is eligible: {checker.IsEligibleForLoan(a4)}");
+            Console.WriteLine($"{a5.Name} is eligible: {checker.IsEligibleForLoan(a5)}");
+            Console.WriteLine($"{a6.Name} is eligible: {checker.IsEligibleForLoan(a6)}");
         }
     }
 }
