@@ -12,6 +12,17 @@
             new Student { Name = "Anna", Grade = 88 },
             new Student { Name = "Robert", Grade = 94 }
             };
+
+            var maxGradeStudent = students[0];
+
+            foreach (Student student in students)
+            {
+                if (student.Grade > maxGradeStudent.Grade)
+                {
+                    maxGradeStudent = student;
+                }
+            }
+            Console.WriteLine($"student with max grade is {maxGradeStudent.Name} with a Grade of {maxGradeStudent.Grade}");
         }
     }
 }
