@@ -133,6 +133,7 @@ namespace _100DaysCodeChallenge
             }
             
             Console.WriteLine($"the total number of items on the list is {inventory.Count}");
+             
         }
     }
 }
