@@ -131,6 +131,8 @@ namespace _100DaysCodeChallenge
             {
                 Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
+            
+            Console.WriteLine($"the total number of items on the list is {inventory.Count}");
         }
     }
 }
