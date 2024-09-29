@@ -1,4 +1,5 @@
 ﻿using _100DaysCodeChallenge.Day_2;
+using _100DaysCodeChallenge.Day_3;
 
 namespace _100DaysCodeChallenge
 {
@@ -75,6 +76,10 @@ namespace _100DaysCodeChallenge
             Console.WriteLine($"{a4.Name} is eligible: {checker.IsEligibleForLoan(a4)}");
             Console.WriteLine($"{a5.Name} is eligible: {checker.IsEligibleForLoan(a5)}");
             Console.WriteLine($"{a6.Name} is eligible: {checker.IsEligibleForLoan(a6)}");
+
+            List<Product> inventory = new List<Product>
+            {
+            };
         }
     }
 }
