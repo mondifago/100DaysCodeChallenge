@@ -100,6 +100,37 @@ namespace _100DaysCodeChallenge
             {
                 Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
+            
+            //update the price of book from 7.0 to 10.0
+            inventory[2] = new Product { Name = "book", Price = 10.0, };
+            Console.WriteLine("Inventory:");
+            foreach (var product in inventory)
+            {
+                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+            }
+            //Or if you dont know if book exists or its index on the List
+            bool bookFound = false;
+            for (int i = 0; i < inventory.Count; i++)
+            {
+                if (inventory[i].Name == "book")
+                {
+                    inventory[i].Price = 10.0;
+                    bookFound = true;
+                    Console.WriteLine("Book price updated to $10.0");
+                    break;
+                }
+            }
+
+            if (!bookFound)
+            {
+                Console.WriteLine("Book not found in the inventory");
+            }
+
+            Console.WriteLine("\nUpdated Inventory:");
+            foreach (var product in inventory)
+            {
+                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+            }
         }
     }
 }
