@@ -91,8 +91,15 @@ namespace _100DaysCodeChallenge
             {
                 Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
-
             
+            //add plate at price of $20 to the list
+            inventory.Add(new Product { Name ="Plate", Price = 20.0});
+
+            Console.WriteLine("Inventory:");
+            foreach (var product in inventory)
+            {
+                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+            }
         }
     }
 }
