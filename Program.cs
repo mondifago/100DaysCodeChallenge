@@ -1,5 +1,6 @@
 ﻿using _100DaysCodeChallenge.Day_2;
 using _100DaysCodeChallenge.Day_3;
+using _100DaysCodeChallenge.Day_4;
 
 namespace _100DaysCodeChallenge
 {
@@ -61,7 +62,7 @@ namespace _100DaysCodeChallenge
             // If you need the highest grade student, it's now the first in the list
             var highestGradeStudent = students[0];
             //Console.WriteLine($"\nStudent with highest grade: {highestGradeStudent.Name}, Grade: {highestGradeStudent.Grade}");
-            
+
             //Day 2
             Applicant a1 = new Applicant { Name = "john", Age = 50, MonthlyIncome = 5000, YearsEmployed = 5 };
             Applicant a2 = new Applicant { Name = "sarah", Age = 35, MonthlyIncome = 1000, YearsEmployed = 6 };
@@ -78,7 +79,7 @@ namespace _100DaysCodeChallenge
             //Console.WriteLine($"{a4.Name} is eligible: {checker.IsEligibleForLoan(a4)}");
             //Console.WriteLine($"{a5.Name} is eligible: {checker.IsEligibleForLoan(a5)}");
             //Console.WriteLine($"{a6.Name} is eligible: {checker.IsEligibleForLoan(a6)}");
-            
+
             //Day 3
             List<Product> inventory = new List<Product>
             {
@@ -88,22 +89,22 @@ namespace _100DaysCodeChallenge
                 new Product { Name = "pen", Price = 3.0, },
                 new Product { Name = "apple", Price = 2.0, },
             };
-            
-            //Console.WriteLine("Inventory:");
-            foreach (var product in inventory)
-            {
-                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
-            }
-            
-            //add plate at price of $20 to the list
-            inventory.Add(new Product { Name ="Plate", Price = 20.0});
 
             //Console.WriteLine("Inventory:");
             foreach (var product in inventory)
             {
                 //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
-            
+
+            //add plate at price of $20 to the list
+            inventory.Add(new Product { Name = "Plate", Price = 20.0 });
+
+            //Console.WriteLine("Inventory:");
+            foreach (var product in inventory)
+            {
+                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+            }
+
             //update the price of book from 7.0 to 10.0
             inventory[2] = new Product { Name = "book", Price = 10.0, };
             //Console.WriteLine("Inventory:");
@@ -135,10 +136,22 @@ namespace _100DaysCodeChallenge
                 //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
             //Console.WriteLine($"the total number of items on the list is {inventory.Count}");
-           
-            
+
+
             //Day 4
-            
+            //display the highest number
+            ArrayOfNumbers arrayObj = new ArrayOfNumbers();
+
+            int highestElement = arrayObj.FindHighestElement();
+            Console.WriteLine($"The highest element in the array is: {highestElement}");
+
+            //display the lowest number
+            int lowestElement = arrayObj.FindLowestElement();
+            Console.WriteLine($"The lowest element in the array is: {lowestElement}");
+
+            //display the sum of all elements
+            double sumOfElemets = arrayObj.FindSumOfAllElements();
+            Console.WriteLine($"The sum of all elements in the array is: {sumOfElemets}");
         }
     }
 }
