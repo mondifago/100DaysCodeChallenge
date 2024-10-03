@@ -1,56 +1,30 @@
-# 100DaysCodeChallenge
+# Day 4: Array Manipulation and Statistics
 
-1, Challenge 1: test for Foreach Loop:
-Create a List<Student> where each Student object contains:
-
-Name (string)
-Grade (int)
-Use a foreach loop to:
-
-Find the student with the highest and lowest grade.
-Calculate the average grade.
-Sort the list by grades in descending order.
-Print the results:
-
-The student with the highest grade.
-The student with the lowest grade.
-The average grade.
-The sorted list of students with their grades.
-
-Instructions:
-Create a List<Student> where each Student object contains:
-
-Name (string)
-Grade (int)
-Use a foreach loop to:
-
-Find the student with the highest and lowest grade.
-Calculate the average grade.
-Sort the list by grades in descending order.
-Print the results:
-
-The student with the highest grade.
-The student with the lowest grade.
-The average grade.
-The sorted list of students with their grades.
-
-2, Challenge 2: test for Boolean Statement
-Challenge: Eligibility Checker
 Problem:
-You are tasked with building a simple eligibility checker for a bank loan. The eligibility criteria are as follows:
-
-The applicant must be at least 21 years old.
-The applicant must have a monthly income of at least $2000.
-The applicant must have been employed for at least 2 years.
-You will write a program that checks whether an applicant is eligible for the loan, using Boolean statements to evaluate the conditions.
+You are tasked with managing an array of integers and performing various operations on it. Your task is to demonstrate your ability to work with array properties and methods by manipulating the array, gathering statistics, and displaying relevant information.
 
 Instructions:
-Create a class Applicant with the following properties:
+Initialize an array of integers with at least 10 elements.
 
-Name (string)
-Age (int)
-MonthlyIncome (double)
-YearsEmployed (int)
-Write a method called IsEligibleForLoan(Applicant applicant) that returns true if all the eligibility criteria are met, otherwise, return false.
+Implement the following functionality using array properties and methods:
 
-In the Main method, create several applicants with different ages, incomes, and employment durations, and print whether they are eligible for the loan or not.
+Find the maximum value in the array.
+Find the minimum value in the array.
+Calculate the sum of all elements in the array.
+Calculate the average of the array values.
+Sort the array in ascending order.
+Sort the array in descending order.
+Reverse the array (without sorting).
+Search for a specific element in the array and return its index.
+Resize the array to add more elements.
+Clear all elements in the array.
+Additional Details:
+
+Use methods like Array.Sort(), Array.Reverse(), Array.Resize(), Array.Clear(), and access array properties such as Length.
+Create a menu where the user can choose which operation to perform on the array.
+Display relevant information (such as the maximum value, sorted array, etc.) after each operation.
+The student with the highest grade.
+The student with the lowest grade.
+The average grade.
+The sorted list of students with their grades.
+
