@@ -1,6 +1,5 @@
+#Day 2: Boolean Statement Challenge 
 
-
-2, Challenge 2: test for Boolean Statement
 Challenge: Eligibility Checker
 Problem:
 You are tasked with building a simple eligibility checker for a bank loan. The eligibility criteria are as follows:
