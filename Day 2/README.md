@@ -1,4 +1,4 @@
-Day 2: Boolean Statement Challenge 
+# Day 2: Boolean Statement Challenge
 
 Challenge: Eligibility Checker
 Problem:
