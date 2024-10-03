@@ -7,6 +7,7 @@ namespace _100DaysCodeChallenge
     {
         static void Main(string[] args)
         {
+            //Day 1
             List<Student> students = new List<Student>
             {
             new Student { Name = "John", Grade = 85 },
@@ -60,7 +61,8 @@ namespace _100DaysCodeChallenge
             // If you need the highest grade student, it's now the first in the list
             var highestGradeStudent = students[0];
             //Console.WriteLine($"\nStudent with highest grade: {highestGradeStudent.Name}, Grade: {highestGradeStudent.Grade}");
-
+            
+            //Day 2
             Applicant a1 = new Applicant { Name = "john", Age = 50, MonthlyIncome = 5000, YearsEmployed = 5 };
             Applicant a2 = new Applicant { Name = "sarah", Age = 35, MonthlyIncome = 1000, YearsEmployed = 6 };
             Applicant a3 = new Applicant { Name = "joe", Age = 15, MonthlyIncome = 4000, YearsEmployed = 4 };
@@ -76,7 +78,8 @@ namespace _100DaysCodeChallenge
             //Console.WriteLine($"{a4.Name} is eligible: {checker.IsEligibleForLoan(a4)}");
             //Console.WriteLine($"{a5.Name} is eligible: {checker.IsEligibleForLoan(a5)}");
             //Console.WriteLine($"{a6.Name} is eligible: {checker.IsEligibleForLoan(a6)}");
-
+            
+            //Day 3
             List<Product> inventory = new List<Product>
             {
                 new Product { Name = "cup", Price = 5.0, },
@@ -86,27 +89,27 @@ namespace _100DaysCodeChallenge
                 new Product { Name = "apple", Price = 2.0, },
             };
             
-            Console.WriteLine("Inventory:");
+            //Console.WriteLine("Inventory:");
             foreach (var product in inventory)
             {
-                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
             
             //add plate at price of $20 to the list
             inventory.Add(new Product { Name ="Plate", Price = 20.0});
 
-            Console.WriteLine("Inventory:");
+            //Console.WriteLine("Inventory:");
             foreach (var product in inventory)
             {
-                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
             
             //update the price of book from 7.0 to 10.0
             inventory[2] = new Product { Name = "book", Price = 10.0, };
-            Console.WriteLine("Inventory:");
+            //Console.WriteLine("Inventory:");
             foreach (var product in inventory)
             {
-                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
             //Or if you dont know if book exists or its index on the List
             bool bookFound = false;
@@ -116,24 +119,26 @@ namespace _100DaysCodeChallenge
                 {
                     inventory[i].Price = 10.0;
                     bookFound = true;
-                    Console.WriteLine("Book price updated to $10.0");
+                    //Console.WriteLine("Book price updated to $10.0");
                     break;
                 }
             }
 
             if (!bookFound)
             {
-                Console.WriteLine("Book not found in the inventory");
+                //Console.WriteLine("Book not found in the inventory");
             }
 
-            Console.WriteLine("\nUpdated Inventory:");
+            //Console.WriteLine("\nUpdated Inventory:");
             foreach (var product in inventory)
             {
-                Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
+                //Console.WriteLine($"Name: {product.Name}, Price: ${product.Price:F2}");
             }
+            //Console.WriteLine($"the total number of items on the list is {inventory.Count}");
+           
             
-            Console.WriteLine($"the total number of items on the list is {inventory.Count}");
-             
+            //Day 4
+            
         }
     }
 }
