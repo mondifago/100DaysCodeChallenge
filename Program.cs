@@ -152,6 +152,10 @@ namespace _100DaysCodeChallenge
             //display the sum of all elements
             double sumOfElemets = arrayObj.FindSumOfAllElements();
             Console.WriteLine($"The sum of all elements in the array is: {sumOfElemets}");
+
+            //display the average of all elements
+            double averageOfElements = arrayObj.FindAverageOfAllElements();
+            Console.WriteLine($"The average of all elements in the array is: {averageOfElements}");
         }
     }
 }

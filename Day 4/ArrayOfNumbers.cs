@@ -39,5 +39,17 @@ public class ArrayOfNumbers
         }
         return sum;
     }
+
+    public double FindAverageOfAllElements()
+    {
+        double sum = 0.0;
+        double average = 0.0;
+        for (int i = 0; i < studentAge.Length; i++)
+        {
+            sum += studentAge[i];
+            average = sum / studentAge.Length;
+        }
+        return average;
+    }
 }
 
