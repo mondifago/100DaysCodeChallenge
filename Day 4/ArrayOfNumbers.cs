@@ -51,5 +51,16 @@ public class ArrayOfNumbers
         }
         return average;
     }
+
+    public void SortArrayElementsInAscendingOrder()
+    {
+        Array.Sort(studentAge);
+    }
+
+    public int[] RetrieveSortedArray()
+    {
+        return studentAge;
+    }
+
 }
 

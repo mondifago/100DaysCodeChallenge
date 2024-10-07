@@ -156,6 +156,18 @@ namespace _100DaysCodeChallenge
             //display the average of all elements
             double averageOfElements = arrayObj.FindAverageOfAllElements();
             Console.WriteLine($"The average of all elements in the array is: {averageOfElements}");
+
+            //display elements in sorted asending order
+            arrayObj.SortArrayElementsInAscendingOrder();
+            int[] sortedArray = arrayObj.RetrieveSortedArray();
+
+            Console.WriteLine("\n Array in ascending order: ");
+
+            foreach (int e in sortedArray)
+            {
+                Console.Write(e);
+            }
+            Console.WriteLine();
         }
     }
 }
